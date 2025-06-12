@@ -194,3 +194,36 @@ cython_debug/
 .cursorindexingignore
 
 artifacts/*
+
+models/
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# ML/AI files
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.pkl
+*.h5
+*.model
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
