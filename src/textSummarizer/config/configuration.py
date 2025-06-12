@@ -78,12 +78,15 @@ class ConfigurationManager:
             num_train_epochs = params.num_train_epochs,
             warmup_steps = params.warmup_steps,
             per_device_train_batch_size = params.per_device_train_batch_size,
+            per_device_eval_batch_size = params.per_device_eval_batch_size,  # ADD THIS
             weight_decay = params.weight_decay,
             logging_steps = params.logging_steps,
             evaluation_strategy = params.evaluation_strategy,
-            eval_steps = params.evaluation_strategy,
+            eval_steps = params.eval_steps,  # FIX: was params.evaluation_strategy
             save_steps = params.save_steps,
-            gradient_accumulation_steps = params.gradient_accumulation_steps
+            gradient_accumulation_steps = params.gradient_accumulation_steps,
+            fp16 = params.fp16,  # ADD THIS
+            report_to = params.report_to  # ADD THIS
         )
 
         return model_trainer_config
